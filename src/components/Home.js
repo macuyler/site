@@ -49,7 +49,7 @@ const useStyles = createUseStyles({
 			boxSizing: 'border-box',
 			border: '2px solid rgba(200, 200, 200, 0.3)',
 			boxShadow: '0px 4px 18px 10px rgba(200, 200, 200, 0.1)',
-			animation: 'enterLogo 2.2s ease',
+			animation: 'enterLogo 2s ease',
 		},
 	},
   content: {
@@ -81,7 +81,7 @@ const useStyles = createUseStyles({
 			fontFamily: "'Audiowide', sans-serif",
 			margin: 0,
 			textShadow: '0px 2px 10px rgba(200, 200, 200, 0.6)',
-			animation: 'slideDown 800ms ease 1.2s',
+			animation: 'slideDown 1s ease 1s',
 		},
 	},
 })
