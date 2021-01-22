@@ -7,13 +7,18 @@ function Home() {
 	const classes = useStyles()
 	return (
 		<main className={classes.wrapper}>
-			<img src={prof} alt="profile" />
-			<div className={classes.content}>
-				<div className={classes.slider} />
-				<h1>Macuyler Dunn</h1>
-				<div className={classes.next}>
-					<h2>a software developer</h2>
+			<header>
+				<img src={prof} alt="profile" />
+				<div className={classes.title}>
+					<div className={classes.slider} />
+					<h1>Macuyler Dunn</h1>
+					<div className={classes.next}>
+						<h2>a software developer</h2>
+					</div>
 				</div>
+			</header>
+			<div className={classes.content}>
+				<p>This is a really cool site!</p>
 			</div>
 		</main>
 	)
@@ -34,27 +39,35 @@ function Home() {
 
 const useStyles = createUseStyles({
 	wrapper: {
-		boxSizing: 'border-box',
-		padding: '20px 10px',
-		display: 'flex',
-		flexDirection: 'row',
-		justifyContent: 'flex-start',
-		alignItems: 'flex-start',
-		'& img': {
-			width: 180,
-			borderRadius: '100%',
-			marginTop: 10,
-			marginRight: 30,
-			marginLeft: -210,
-			boxSizing: 'border-box',
-			border: '2px solid rgba(200, 200, 200, 0.3)',
-			boxShadow: '0px 4px 18px 10px rgba(200, 200, 200, 0.1)',
-			animation: 'enterLogo 2s ease',
-		},
-	},
-  content: {
 		width: '100%',
 		height: '100vh',
+		overflow: 'hidden',
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'flex-start',
+		alignItems: 'center',
+		'& header': {
+			boxSizing: 'border-box',
+			padding: '20px 10px',
+			display: 'flex',
+			flexDirection: 'row',
+			justifyContent: 'flex-start',
+			alignItems: 'flex-start',
+			'& img': {
+				width: 180,
+				borderRadius: '100%',
+				marginTop: 10,
+				marginRight: 30,
+				marginLeft: -210,
+				boxSizing: 'border-box',
+				border: '2px solid rgba(200, 200, 200, 0.3)',
+				boxShadow: '0px 4px 18px 10px rgba(200, 200, 200, 0.1)',
+				animation: 'enterLogo 2s ease',
+			},
+		},
+	},
+  title: {
+		width: '100%',
 		justifyContent: 'flex-start',
 		animation: 'fadeIn 300ms ease',
 		'& main': {
@@ -83,6 +96,10 @@ const useStyles = createUseStyles({
 			textShadow: '0px 2px 10px rgba(200, 200, 200, 0.6)',
 			animation: 'slideDown 1s ease 1s',
 		},
+	},
+	content: {
+		animation: 'fadeInNext 2.5s ease',
+		color: '#fff'
 	},
 })
 
