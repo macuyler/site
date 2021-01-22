@@ -12,7 +12,12 @@ function Content() {
 	const classes = useStyles()
 	return (
 		<div className={classes.content}>
-			<p>This is a really cool site!</p>
+			<h3>PROJECTS</h3>
+			<div className={classes.row}>
+				<div className={classes.project}></div>
+				<div className={classes.project}></div>
+				<div className={classes.project}></div>
+			</div>
 		</div>
 	)
 }
@@ -20,7 +25,22 @@ function Content() {
 const useStyles = createUseStyles({
 	content: {
 		animation: 'fadeInNext 2.5s ease',
-		color: '#fff'
+		color: '#fff',
+		'& h3': {
+			fontFamily: "'Bungee Hairline', sans-serif",
+			fontSize: '3.5rem',
+			margin: 0,
+		},
+	},
+	row: {
+		flexDirection: 'row',
+	},
+	project: {
+		display: 'block',
+		width: 300,
+		height: 180,
+		background: '#a4a4a4',
+		margin: 10,
 	},
 })
 
