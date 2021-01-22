@@ -38,9 +38,9 @@ const useStyles = createUseStyles({
 		animation: 'fadeIn 300ms ease',
 		'& h1': {
 			color: '#fafafa',
-			fontSize: '5rem',
+			fontSize: '5.6rem',
 			margin: 0,
-			fontFamily: "'Audiowide', cursive",
+			fontFamily: "'Audiowide', sans-serif",
 			animation: 'flicker 1s ease',
 			textShadow: '0px 2px 12px rgba(200, 200, 200, 0.6)',
 		},
@@ -54,7 +54,7 @@ const useStyles = createUseStyles({
 		'& h2': {
 			color: '#fff',
 			fontSize: '3.8rem',
-			fontFamily: "'Audiowide', cursive",
+			fontFamily: "'Audiowide', sans-serif",
 			margin: 0,
 			textShadow: '0px 2px 10px rgba(200, 200, 200, 0.6)',
 			animation: 'slideDown 800ms ease 1.2s',
