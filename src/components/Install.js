@@ -9,7 +9,7 @@ function Install({ done }) {
 	const [lines, setLines] = useState([])
 
 	const readLine = useCallback((ls) => {
-		const fastForward = 25;
+		const fastForward = 50;
 		const newLs = [...ls]
 		for (let i = 0; i < fastForward; i++) {
 			const l = installLines.pop()
@@ -17,7 +17,7 @@ function Install({ done }) {
 		}
 		setLines(newLs)
 		if (installLines.length > 0)
-			setTimeout(() => readLine(newLs), 2)
+			setTimeout(() => readLine(newLs), 30)
 		else
 			done()
 	}, [setLines, done])
