@@ -4,7 +4,7 @@ import Install from './Install'
 
 function App() {
 	const [loading, setLoading] = useState(true)
-  return loading ? <Install done={() => setLoading(false)} /> : <Home />
+	return loading ? <Install done={() => setLoading(false)} /> : <Home />
 }
 
 
