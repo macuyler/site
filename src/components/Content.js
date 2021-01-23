@@ -1,4 +1,5 @@
 import { createUseStyles } from 'react-jss'
+import { bp } from '../utils/helpers.js'
 import pandem from '../assets/img/project1.png'
 import files from '../assets/img/project2.png'
 import lib from '../assets/img/project3.png'
@@ -48,6 +49,7 @@ const useStyles = createUseStyles({
 	content: {
 		animation: 'fadeInNext 2.5s ease',
 		color: '#fff',
+		margin: '10px 0 25px 0',
 		'& h3': {
 			fontFamily: "'Bungee Hairline', sans-serif",
 			fontSize: '3.5rem',
@@ -57,6 +59,9 @@ const useStyles = createUseStyles({
 	row: {
 		flexDirection: 'row',
 		margin: '10px 0',
+		[bp(1300)]: {
+			flexDirection: 'column',
+		},
 	},
 	project: {
 		width: 400,
@@ -91,6 +96,9 @@ const useStyles = createUseStyles({
 		},
 		'& a:hover': {
 			backgroundColor: 'hsla(0, 0%, 100%, 0.08)',
+		},
+		[bp(1300)]: {
+			margin: '10px 0',
 		},
 	},
 })
