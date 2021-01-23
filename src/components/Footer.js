@@ -1,4 +1,5 @@
 import { createUseStyles } from 'react-jss'
+import { bp } from '../utils/helpers.js'
 import fb from '../assets/icons/facebook.svg'
 import gh from '../assets/icons/github.svg'
 import ig from '../assets/icons/instagram.svg'
@@ -33,15 +34,19 @@ function Footer() {
 	return (
 		<footer className={classes.footer}>
 			<div className={classes.container}>
+			<div className={classes.links}>
 				<Line text="#!/bin/bash" code href="https://github.com/macuyler/my-config" />
 				<Line text="macuyler@gmail.com" />
 				<Line text="© 2021 Macuyler Dunn" />
+			</div>
+			<div className={classes.links}>
 				<Line text="GitHub" href="https://github.com/macuyler" img={gh} />
 				<Line text="LinkedIn" href="https://www.linkedin.com/in/macuyler" img={li} />
 				<Line text="UpWork" href="https://www.upwork.com/freelancers/~01c3592ca6bd1406ae" img={uw} />
 				<Line text="Twitter" href="https://twitter.com/macuyler" img={tw} />
 				<Line text="Instagram" href="https://www.instagram.com/macuyler" img={ig} />
 				<Line text="Facebook" href="https://www.facebook.com/macuyler" img={fb} />
+			</div>
 			</div>
 		</footer>
 	)
@@ -58,12 +63,28 @@ const useStyles = createUseStyles({
 		color: '#fff',
 		display: 'flex',
 		justifyContent: 'center',
+		[bp(550)]: { height: 'auto' },
+		[bp(380)]: { padding: '12px 0 10px' },
 	},
 	container: {
 		width: '50%',
 		height: '100%',
-		alignItems: 'flex-start',
+		flexDirection: 'row',
 		justifyContent: 'space-between',
+		[bp(1300)]: {
+			width: '100%',
+			maxWidth: '800px',
+			padding: '0 20px',
+		},
+		[bp(550)]: { flexDirection: 'column' },
+	},
+	links: {
+		flexGrow: 1,
+		width: '100%',
+		height: 120,
+		marginBottom: 10,
+		alignItems: 'flex-start',
+		justifyContent: 'space-around',
 		flexWrap: 'wrap',
 		'& img': {
 			width: 25,
@@ -71,7 +92,8 @@ const useStyles = createUseStyles({
 			borderRadius: '100%',
 		},
 		'& p': {
-			margin: '6px 0',
+			margin: '6px',
+			marginRight: '12px',
 			display: 'flex',
 			alignItems: 'center',
 		},
@@ -82,6 +104,7 @@ const useStyles = createUseStyles({
 		'& a:hover': {
 			textDecoration: 'underline',
 		},
+		[bp(380)]: { height: 'auto' },
 	},
 })
 
