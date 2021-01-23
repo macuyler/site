@@ -1,4 +1,5 @@
 import { createUseStyles } from 'react-jss'
+import { bp } from '../utils/helpers.js'
 import prof from '../assets/img/profile.jpg'
 
 function Header() {
@@ -8,7 +9,7 @@ function Header() {
 			<img src={prof} alt="profile" />
 			<div className={classes.title}>
 				<div className={classes.slider} />
-				<h1>Macuyler Dunn</h1>
+				<h1>Macuyler <span>Dunn</span></h1>
 				<div className={classes.next}>
 					<h2>a software developer</h2>
 				</div>
@@ -36,6 +37,14 @@ const useStyles = createUseStyles({
 			boxShadow: '0px 4px 18px 10px rgba(200, 200, 200, 0.1)',
 			animation: 'enterLogo 2s ease',
 		},
+		[bp(1300)]: {
+			flexDirection: 'column',
+			alignItems: 'center',
+			'& img': {
+				marginRight: 0,
+				marginLeft: 0,
+			},
+		},
 	},
   title: {
 		width: '100%',
@@ -51,6 +60,16 @@ const useStyles = createUseStyles({
 			fontFamily: "'Audiowide', sans-serif",
 			animation: 'flicker 1s ease',
 			textShadow: '0px 2px 12px rgba(200, 200, 200, 0.6)',
+			[bp(800)]: {
+				fontSize: '3rem',
+				textAlign: 'center',
+			},
+			[bp(430)]: {
+				fontSize: '2.8rem',
+				lineHeight: '50px',
+				marginBottom: '10px',
+				'& span': { fontSize: '4.6rem', display: 'block' },
+			},
 		},
 	},
 	slider: {
@@ -66,6 +85,8 @@ const useStyles = createUseStyles({
 			margin: 0,
 			textShadow: '0px 2px 10px rgba(200, 200, 200, 0.6)',
 			animation: 'slideDown 1s ease 1s',
+			[bp(800)]: { fontSize: '2rem' },
+			[bp(430)]: { fontSize: '1.2rem' },
 		},
 	},
 })
