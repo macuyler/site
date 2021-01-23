@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { createUseStyles } from 'react-jss'
+import { bp } from '../utils/helpers.js'
 import lines from '../utils/install.js'
 
 const installLines = lines.split('\n').reverse() 
@@ -8,7 +9,7 @@ function Install({ done }) {
 	const [lines, setLines] = useState([])
 
 	const readLine = useCallback((ls) => {
-		const fastForward = 15;
+		const fastForward = 25;
 		const newLs = [...ls]
 		for (let i = 0; i < fastForward; i++) {
 			const l = installLines.pop()
@@ -16,7 +17,7 @@ function Install({ done }) {
 		}
 		setLines(newLs)
 		if (installLines.length > 0)
-			setTimeout(() => readLine(newLs), 5)
+			setTimeout(() => readLine(newLs), 2)
 		else
 			done()
 	}, [setLines, done])
@@ -43,6 +44,9 @@ const useStyles = createUseStyles({
 		alignItems: 'flex-start',
 		'& code': {
 			color: '#ddd',
+			[bp(400)]: {
+				fontSize: '0.8rem',
+			},
 		},
 	},
 })
