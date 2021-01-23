@@ -52,3 +52,21 @@
 		opacity: 1;
 	}
 }
+
+@keyframes enterLogoMobile {
+	0% {
+		margin-top: -300px;
+		margin-bottom: 117.2px;
+		opacity: 0;
+	}
+	70% {
+		margin-top: -300px;
+		margin-bottom: 117.2px;
+		opacity: 0;
+	}
+	100% {
+		margin-top: 0;
+		margin-bottom: 0;
+		opacity: 1;
+	}
+}

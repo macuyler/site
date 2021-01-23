@@ -41,8 +41,10 @@ const useStyles = createUseStyles({
 			flexDirection: 'column',
 			alignItems: 'center',
 			'& img': {
+				marginTop: 0,
 				marginRight: 0,
 				marginLeft: 0,
+				animation: 'enterLogoMobile 2s ease'
 			},
 		},
 	},

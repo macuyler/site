@@ -34,19 +34,19 @@ function Footer() {
 	return (
 		<footer className={classes.footer}>
 			<div className={classes.container}>
-			<div className={classes.links}>
-				<Line text="#!/bin/bash" code href="https://github.com/macuyler/my-config" />
-				<Line text="macuyler@gmail.com" />
-				<Line text="© 2021 Macuyler Dunn" />
-			</div>
-			<div className={classes.links}>
-				<Line text="GitHub" href="https://github.com/macuyler" img={gh} />
-				<Line text="LinkedIn" href="https://www.linkedin.com/in/macuyler" img={li} />
-				<Line text="UpWork" href="https://www.upwork.com/freelancers/~01c3592ca6bd1406ae" img={uw} />
-				<Line text="Twitter" href="https://twitter.com/macuyler" img={tw} />
-				<Line text="Instagram" href="https://www.instagram.com/macuyler" img={ig} />
-				<Line text="Facebook" href="https://www.facebook.com/macuyler" img={fb} />
-			</div>
+				<div className={classes.links}>
+					<Line text="#!/bin/bash" code href="https://github.com/macuyler/my-config" />
+					<Line text="macuyler@gmail.com" />
+					<Line text="© 2021 Macuyler Dunn" />
+				</div>
+				<div className={classes.links}>
+					<Line text="GitHub" href="https://github.com/macuyler" img={gh} />
+					<Line text="LinkedIn" href="https://www.linkedin.com/in/macuyler" img={li} />
+					<Line text="UpWork" href="https://www.upwork.com/freelancers/~01c3592ca6bd1406ae" img={uw} />
+					<Line text="Twitter" href="https://twitter.com/macuyler" img={tw} />
+					<Line text="Instagram" href="https://www.instagram.com/macuyler" img={ig} />
+					<Line text="Facebook" href="https://www.facebook.com/macuyler" img={fb} />
+				</div>
 			</div>
 		</footer>
 	)
