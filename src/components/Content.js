@@ -54,6 +54,7 @@ const useStyles = createUseStyles({
 			fontFamily: "'Bungee Hairline', sans-serif",
 			fontSize: '3.5rem',
 			margin: 0,
+			[bp(350)]: { fontSize: '2.8rem' },
 		},
 	},
 	row: {
@@ -80,6 +81,7 @@ const useStyles = createUseStyles({
 		'& h4': {
 			margin: '10px 12px',
 			fontSize: '2rem',
+			[bp(350)]: { fontSize: '1.5rem' },
 		},
 		'& p': {
 			margin: '0 12px 10px 12px',
@@ -99,6 +101,9 @@ const useStyles = createUseStyles({
 		},
 		[bp(1300)]: {
 			margin: '10px 0',
+		},
+		[bp(430)]: {
+			width: '95%',
 		},
 	},
 })
