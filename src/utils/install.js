@@ -21,7 +21,28 @@ Get:3 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 nodejs-doc all 10
 Get:4 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 nodejs amd64 10.19.0~dfsg-3ubuntu1 [61.1 kB]
 Fetched 6,807 kB in 1s (6,182 kB/s)
 Selecting previously unselected package libc-ares2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 223792 files and directories currently installed.)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 223792 files and directories currently installed.)
 Preparing to unpack .../libc-ares2_1.15.0-1build1_amd64.deb ...
 Unpacking libc-ares2:amd64 (1.15.0-1build1) ...
 Selecting previously unselected package libnode64:amd64.
@@ -476,7 +497,28 @@ Get:284 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 node-slide all 
 Get:285 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 npm all 6.14.4+ds-1ubuntu2 [583 kB]
 Fetched 4,260 kB in 3s (1,387 kB/s)
 Selecting previously unselected package python-pkg-resources.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 223924 files and directories currently installed.)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 223924 files and directories currently installed.)
 Preparing to unpack .../000-python-pkg-resources_44.0.0-2_all.deb ...
 Unpacking python-pkg-resources (44.0.0-2) ...
 Selecting previously unselected package gyp.
@@ -1616,6 +1658,7 @@ Setting up node-read-package-json (2.1.1-1) ...
 Setting up node-gyp (6.1.0-3) ...
 Setting up node-libnpx (10.2.1-2) ...
 Setting up npm (6.14.4+ds-1ubuntu2) ...
-Processing triggers for man-db (2.9.1-1) ...`
+Processing triggers for man-db (2.9.1-1) ...
+`
 
-export default lines;
+export default lines
