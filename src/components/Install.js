@@ -16,6 +16,7 @@ function Install({ done }) {
         const l = installLines.pop()
         newLs.push(l)
       }
+      if (newLs.length > 300) newLs.splice(0, fastForward)
       setLines(newLs)
       if (installLines.length > 0) setTimeout(() => readLine(newLs), 30)
       else done()
