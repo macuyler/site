@@ -97,7 +97,7 @@ const useStyles = createUseStyles({
       marginTop: 0,
       marginRight: 0,
       marginLeft: 0,
-      animation: "enterLogoMobile 2s ease",
+      animation: "enterLogoMobile 2.1s ease",
     },
   },
 })
