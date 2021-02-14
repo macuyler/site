@@ -6,7 +6,9 @@ function Header() {
   const classes = useStyles()
   return (
     <header className={classes.header}>
-      <img src={prof} alt="profile" />
+      <div className={classes.profile}>
+        <img src={prof} alt="profile" />
+      </div>
       <div className={classes.title}>
         <div className={classes.slider} />
         <h1>
@@ -29,25 +31,16 @@ const useStyles = createUseStyles({
     justifyContent: "flex-start",
     alignItems: "flex-start",
     "& img": {
-      width: 180,
+      maxWidth: "100%",
+      maxHeight: "100%",
       borderRadius: "100%",
-      marginTop: 10,
-      marginRight: 30,
-      marginLeft: -210,
       boxSizing: "border-box",
       border: "2px solid rgba(200, 200, 200, 0.3)",
       boxShadow: "0px 4px 18px 10px rgba(200, 200, 200, 0.1)",
-      animation: "enterLogo 2s ease",
     },
     [bp(1300)]: {
       flexDirection: "column",
       alignItems: "center",
-      "& img": {
-        marginTop: 0,
-        marginRight: 0,
-        marginLeft: 0,
-        animation: "enterLogoMobile 2s ease",
-      },
     },
   },
   title: {
@@ -91,6 +84,20 @@ const useStyles = createUseStyles({
       animation: "slideDown 1s ease 1s",
       [bp(800)]: { fontSize: "2rem" },
       [bp(430)]: { fontSize: "1.2rem" },
+    },
+  },
+  profile: {
+    width: 180,
+    height: 180,
+    marginTop: 10,
+    marginRight: 30,
+    marginLeft: -210,
+    animation: "enterLogo 2s ease",
+    [bp(1300)]: {
+      marginTop: 0,
+      marginRight: 0,
+      marginLeft: 0,
+      animation: "enterLogoMobile 2s ease",
     },
   },
 })
