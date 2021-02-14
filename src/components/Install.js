@@ -1,54 +1,58 @@
-import { useState, useEffect, useCallback } from 'react'
-import { createUseStyles } from 'react-jss'
-import { bp } from '../utils/helpers.js'
-import lines from '../utils/install.js'
+import { useState, useEffect, useCallback } from "react"
+import { createUseStyles } from "react-jss"
+import { bp } from "../utils/helpers.js"
+import lines from "../utils/install.js"
 
-const installLines = lines.split('\n').reverse() 
+const installLines = lines.split("\n").reverse()
 
 function Install({ done }) {
-	const [lines, setLines] = useState([])
+  const [lines, setLines] = useState([])
 
-	const readLine = useCallback((ls) => {
-		const fastForward = 50;
-		const newLs = [...ls]
-		for (let i = 0; i < fastForward; i++) {
-			const l = installLines.pop()
-			newLs.push(l)
-		}
-		setLines(newLs)
-		if (installLines.length > 0)
-			setTimeout(() => readLine(newLs), 30)
-		else
-			done()
-	}, [setLines, done])
+  const readLine = useCallback(
+    (ls) => {
+      const fastForward = 50
+      const newLs = [...ls]
+      for (let i = 0; i < fastForward; i++) {
+        const l = installLines.pop()
+        newLs.push(l)
+      }
+      if (newLs.length > 300) newLs.splice(0, fastForward)
+      setLines(newLs)
+      if (installLines.length > 0) setTimeout(() => readLine(newLs), 30)
+      else done()
+    },
+    [setLines, done]
+  )
 
-	useEffect(() => {
-		readLine([])
-	}, [readLine])
+  useEffect(() => {
+    readLine([])
+  }, [readLine])
 
-	const classes = useStyles()
+  const classes = useStyles()
 
-	return (
-		<div className={classes.wrapper}>
-			{lines.map((l, i) => <code key={`l${i}`}>{l}</code>)}
-		</div>
-	)
+  return (
+    <div className={classes.wrapper}>
+      {lines.map((l, i) => (
+        <code key={`l${i}`}>{l}</code>
+      ))}
+    </div>
+  )
 }
 
 const useStyles = createUseStyles({
-	wrapper: {
-		width: '100%',
-		height: '100vh',
-		overflow: 'hidden',
-		justifyContent: 'flex-end',
-		alignItems: 'flex-start',
-		'& code': {
-			color: '#ddd',
-			[bp(400)]: {
-				fontSize: '0.8rem',
-			},
-		},
-	},
+  wrapper: {
+    width: "100%",
+    height: "100vh",
+    overflow: "hidden",
+    justifyContent: "flex-end",
+    alignItems: "flex-start",
+    "& code": {
+      color: "#ddd",
+      [bp(400)]: {
+        fontSize: "0.8rem",
+      },
+    },
+  },
 })
 
 export default Install
