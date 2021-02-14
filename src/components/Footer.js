@@ -1,11 +1,6 @@
 import { createUseStyles } from "react-jss"
-import { bp } from "../utils/helpers.js"
-import fb from "../assets/icons/facebook.svg"
-import gh from "../assets/icons/github.svg"
-import ig from "../assets/icons/instagram.svg"
-import li from "../assets/icons/linkedin.svg"
-import tw from "../assets/icons/twitter.svg"
-import uw from "../assets/icons/upwork.png"
+import { bp } from "../utils/helpers"
+import images from "../utils/images"
 
 function Line({ text, href, code, img }) {
   let out = text
@@ -43,27 +38,35 @@ function Footer() {
           <Line text="© 2021 Macuyler Dunn" />
         </div>
         <div className={classes.links}>
-          <Line text="GitHub" href="https://github.com/macuyler" img={gh} />
+          <Line
+            text="GitHub"
+            href="https://github.com/macuyler"
+            img={images.gh}
+          />
           <Line
             text="LinkedIn"
             href="https://www.linkedin.com/in/macuyler"
-            img={li}
+            img={images.li}
           />
           <Line
             text="UpWork"
             href="https://www.upwork.com/freelancers/~01c3592ca6bd1406ae"
-            img={uw}
+            img={images.uw}
           />
-          <Line text="Twitter" href="https://twitter.com/macuyler" img={tw} />
+          <Line
+            text="Twitter"
+            href="https://twitter.com/macuyler"
+            img={images.tw}
+          />
           <Line
             text="Instagram"
             href="https://www.instagram.com/macuyler"
-            img={ig}
+            img={images.ig}
           />
           <Line
             text="Facebook"
             href="https://www.facebook.com/macuyler"
-            img={fb}
+            img={images.fb}
           />
         </div>
       </div>

@@ -1,12 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./assets/css/index.css"
 import App from "./components/App"
+import { LoadImages } from "./utils/images"
+/* eslint-disable-next-line */
 import reportWebVitals from "./utils/reportWebVitals"
+import "./assets/css/index.css"
+import "./assets/css/anims.css"
+import "./assets/css/fonts.css"
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <LoadImages />
   </React.StrictMode>,
   document.getElementById("root")
 )

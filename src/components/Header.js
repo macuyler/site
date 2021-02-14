@@ -1,13 +1,13 @@
 import { createUseStyles } from "react-jss"
-import { bp } from "../utils/helpers.js"
-import prof from "../assets/img/profile.jpg"
+import { bp } from "../utils/helpers"
+import images from "../utils/images"
 
 function Header() {
   const classes = useStyles()
   return (
     <header className={classes.header}>
       <div className={classes.profile}>
-        <img src={prof} alt="profile" />
+        <img src={images.prof} alt="profile" />
       </div>
       <div className={classes.title}>
         <div className={classes.slider} />

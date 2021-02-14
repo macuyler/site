@@ -1,8 +1,6 @@
 import { createUseStyles } from "react-jss"
-import { bp } from "../utils/helpers.js"
-import pandem from "../assets/img/project1.png"
-import files from "../assets/img/project2.png"
-import lib from "../assets/img/project3.png"
+import { bp } from "../utils/helpers"
+import images from "../utils/images"
 
 function Project({ img, title, desc, href }) {
   const classes = useStyles()
@@ -25,19 +23,19 @@ function Content() {
       <h3>PROJECTS</h3>
       <div className={classes.row}>
         <Project
-          img={pandem}
+          img={images.pandem}
           title="Pandemonium 2020"
           desc="This is a fun new game, where you save people to get a high score!"
           href="https://github.com/macuyler/pandemonium2020"
         />
         <Project
-          img={files}
+          img={images.files}
           title="Files"
           desc="This is a simple file hosting app designed to run on firebase hosting."
           href="https://github.com/macuyler/files"
         />
         <Project
-          img={lib}
+          img={images.lib}
           title="IO Game Lib"
           desc="This is the official IO Game Library for building awesome games on the CodeChangers IO Platform."
           href="https://github.com/codechangers/io-game-lib"
