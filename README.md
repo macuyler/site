@@ -1,4 +1,4 @@
-# Macuyler.com
+# My site
 This is my personal site and online portfolio.
 
 ## Setup
