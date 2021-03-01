@@ -32,7 +32,7 @@ function Footer() {
           <Line
             text="#!/bin/bash"
             code
-            href="https://github.com/macuyler/my-config"
+            href="https://github.com/macuyler/config"
           />
           <Line text="macuyler@gmail.com" />
           <Line text="© 2021 Macuyler Dunn" />
