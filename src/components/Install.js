@@ -8,9 +8,11 @@ const installLines = lines.split("\n").reverse()
 function Install({ done }) {
   const [lines, setLines] = useState([])
 
+  let pt
   const readLine = useCallback(
     (ls) => {
-      const fastForward = 50
+      const fastForward = pt !== null ? 2 * (Date.now() - pt) : 0
+      pt = Date.now()
       const newLs = [...ls]
       for (let i = 0; i < fastForward; i++) {
         const l = installLines.pop()
@@ -18,7 +20,7 @@ function Install({ done }) {
       }
       if (newLs.length > 300) newLs.splice(0, fastForward)
       setLines(newLs)
-      if (installLines.length > 0) setTimeout(() => readLine(newLs), 30)
+      if (installLines.length > 0) requestAnimationFrame(() => readLine(newLs))
       else done()
     },
     [setLines, done]
