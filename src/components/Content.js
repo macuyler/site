@@ -23,10 +23,10 @@ function Content() {
       <h3>PROJECTS</h3>
       <div className={classes.row}>
         <Project
-          img={images.project1}
-          title="Pandemonium 2020"
-          desc="This is a fun new game, where you save people to get a high score!"
-          href="https://pandemonium2020.app"
+          img={images.project3}
+          title="Code Contest"
+          desc="This is a competitive event for kids interested in creating their own video game and learning to code!"
+          href="https://codecontest.org"
         />
         <Project
           img={images.project2}
@@ -35,10 +35,10 @@ function Content() {
           href="https://playsuipi.com"
         />
         <Project
-          img={images.project3}
-          title="Code Contest"
-          desc="This is a competitive event for kids interested in creating their own video game and learning to code!"
-          href="https://codecontest.org"
+          img={images.project1}
+          title="Pandemonium 2020"
+          desc="This is a fun new game, where you save people to get a high score!"
+          href="https://pandemonium2020.app"
         />
       </div>
     </div>
