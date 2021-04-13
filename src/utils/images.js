@@ -1,6 +1,6 @@
-import pandem from "../assets/img/project1.png"
-import files from "../assets/img/project2.png"
-import lib from "../assets/img/project3.png"
+import project1 from "../assets/img/project1.png"
+import project2 from "../assets/img/project2.png"
+import project3 from "../assets/img/project3.png"
 import prof from "../assets/img/profile.jpg"
 
 import fb from "../assets/icons/facebook.svg"
@@ -10,7 +10,7 @@ import li from "../assets/icons/linkedin.svg"
 import tw from "../assets/icons/twitter.svg"
 import uw from "../assets/icons/upwork.png"
 
-const images = { pandem, files, lib, prof, fb, gh, ig, li, tw, uw }
+const images = { project1, project2, project3, prof, fb, gh, ig, li, tw, uw }
 
 export const LoadImages = () => {
   return (

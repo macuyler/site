@@ -23,22 +23,22 @@ function Content() {
       <h3>PROJECTS</h3>
       <div className={classes.row}>
         <Project
-          img={images.pandem}
+          img={images.project1}
           title="Pandemonium 2020"
           desc="This is a fun new game, where you save people to get a high score!"
-          href="https://github.com/macuyler/pandemonium2020"
+          href="https://pandemonium2020.app"
         />
         <Project
-          img={images.files}
-          title="Files"
-          desc="This is a simple file hosting app designed to run on firebase hosting."
-          href="https://github.com/macuyler/files"
+          img={images.project2}
+          title="Play Suipi"
+          desc="This the first and only online multiplayer version of your favorite Samoan card game!"
+          href="https://playsuipi.com"
         />
         <Project
-          img={images.lib}
-          title="IO Game Lib"
-          desc="This is the official IO Game Library for building awesome games on the CodeChangers IO Platform."
-          href="https://github.com/codechangers/io-game-lib"
+          img={images.project3}
+          title="Code Contest"
+          desc="This is a competitive event for kids interested in creating their own video game and learning to code!"
+          href="https://codecontest.org"
         />
       </div>
     </div>
