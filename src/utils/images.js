@@ -3,14 +3,14 @@ import project2 from "../assets/img/project2.png"
 import project3 from "../assets/img/project3.png"
 import prof from "../assets/img/profile.jpg"
 
-import fb from "../assets/icons/facebook.svg"
+import bc from "../assets/icons/bugcrowd.png"
 import gh from "../assets/icons/github.svg"
 import ig from "../assets/icons/instagram.svg"
 import li from "../assets/icons/linkedin.svg"
 import tw from "../assets/icons/twitter.svg"
-import uw from "../assets/icons/upwork.png"
+import h1 from "../assets/icons/hackerone.png"
 
-const images = { project1, project2, project3, prof, fb, gh, ig, li, tw, uw }
+const images = { project1, project2, project3, prof, bc, gh, ig, li, tw, h1 }
 
 export const LoadImages = () => {
   return (

@@ -44,14 +44,14 @@ function Footer() {
             img={images.gh}
           />
           <Line
-            text="LinkedIn"
-            href="https://www.linkedin.com/in/macuyler"
-            img={images.li}
+            text="Bugcrowd"
+            href="https://bugcrowd.com/macuyler"
+            img={images.bc}
           />
           <Line
-            text="UpWork"
-            href="https://www.upwork.com/freelancers/~01c3592ca6bd1406ae"
-            img={images.uw}
+            text="Hackerone"
+            href="https://hackerone.com/macuyler"
+            img={images.h1}
           />
           <Line
             text="Twitter"
@@ -59,14 +59,14 @@ function Footer() {
             img={images.tw}
           />
           <Line
+            text="LinkedIn"
+            href="https://www.linkedin.com/in/macuyler"
+            img={images.li}
+          />
+          <Line
             text="Instagram"
             href="https://www.instagram.com/macuyler"
             img={images.ig}
-          />
-          <Line
-            text="Facebook"
-            href="https://www.facebook.com/macuyler"
-            img={images.fb}
           />
         </div>
       </div>
