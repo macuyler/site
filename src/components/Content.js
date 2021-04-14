@@ -25,19 +25,19 @@ function Content() {
         <Project
           img={images.project3}
           title="Code Contest"
-          desc="This is a competitive event for kids interested in creating their own video game and learning to code!"
+          desc="A competitive event for kids who want to create their own video game and learn how to code!"
           href="https://codecontest.org"
         />
         <Project
           img={images.project2}
           title="Play Suipi"
-          desc="This the first and only online multiplayer version of your favorite Samoan card game!"
+          desc="The first and only online multiplayer version of your favorite Samoan card game!"
           href="https://playsuipi.com"
         />
         <Project
           img={images.project1}
           title="Pandemonium 2020"
-          desc="This is a fun new game, where you save people to get a high score!"
+          desc="A fun new game where you try to save as many people from the pandemonium as possible!"
           href="https://pandemonium2020.app"
         />
       </div>
