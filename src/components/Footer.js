@@ -64,9 +64,9 @@ function Footer() {
             img={images.li}
           />
           <Line
-            text="Instagram"
-            href="https://www.instagram.com/macuyler"
-            img={images.ig}
+            text="YouTube"
+            href="https://www.youtube.com/channel/UCEBOU9EktLcAmVAD3p1bRZg"
+            img={images.yt}
           />
         </div>
       </div>

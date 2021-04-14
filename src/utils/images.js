@@ -5,12 +5,12 @@ import prof from "../assets/img/profile.jpg"
 
 import bc from "../assets/icons/bugcrowd.png"
 import gh from "../assets/icons/github.svg"
-import ig from "../assets/icons/instagram.svg"
+import h1 from "../assets/icons/hackerone.png"
 import li from "../assets/icons/linkedin.svg"
 import tw from "../assets/icons/twitter.svg"
-import h1 from "../assets/icons/hackerone.png"
+import yt from "../assets/icons/youtube.svg"
 
-const images = { project1, project2, project3, prof, bc, gh, ig, li, tw, h1 }
+const images = { project1, project2, project3, prof, bc, gh, yt, li, tw, h1 }
 
 export const LoadImages = () => {
   return (
